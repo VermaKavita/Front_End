@@ -12,10 +12,12 @@ const SignIn = () => {
    <div class="container position-relative" id='signin'>
         <div class="row mt-4">
           <div class="col-lg-4 col-md-8 col-12 mx-auto">
-            <div class="card z-index-0 ">
-              <div class="card-header p-0  mt-n4 mx-3 z-index-2">
-                <div className='card-title mx-auto text-center my-3'><h3>Sign in</h3> </div>
-<div className='card-body'>
+            <div class="card z-index-0 fadeIn3 fadeInBottom">
+            <div class="card-header p-0 position-relative mt-n4 mx-3">
+                <div class="bg-gradient shadow border-radius-lg py-3 pe-1">
+                  <h4 class="text-black font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
+                  </div></div>
+<div className='card-body my-3'>
     <form onSubmit={(e)=>{
         e.preventDefault();
         async function add(){
@@ -40,14 +42,14 @@ const SignIn = () => {
 </form>
 <p class="mt-4 text-sm text-center">
                     Don't have an account?
-                    <a href="/signup.html" class="text-primary text-gradient font-weight-bold">Sign up</a>
+                    <a href="/signup" class="text-primary text-gradient font-weight-bold">Sign up</a>
                   </p>
 </div>
                 </div>
                 </div>
                 </div>
                 </div>
-                </div>
+               
                 
     </>
   )

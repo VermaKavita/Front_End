@@ -48,3 +48,14 @@ body{
 #i1{
   font-family: cursive;
 }
+#sidebarMenu{
+  border-radius: 10px;
+}
+button,a{
+  background-image: url("../public/logo512.png");
+}
+button :hover{
+  box-shadow: 5px 6px 9px 9px rgb(76, 182, 199);
+  transform: translate(5px);
+
+}

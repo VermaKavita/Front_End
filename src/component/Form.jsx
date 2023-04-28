@@ -1,12 +1,13 @@
 
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false,
+      modal: true,
       nestedModal: false,
       closeAll: false
     };
@@ -38,8 +39,7 @@ class Form extends React.Component {
 
   render() {
     return (
-      <div>
-        <Button color="" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+      <>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
@@ -56,11 +56,11 @@ class Form extends React.Component {
             </Modal>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+            <Button color="primary" onClick={this.toggle}>Do Something</Button>{Navigate('/dashboard')}
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
-      </div>
+      </>
     );
   }
 }

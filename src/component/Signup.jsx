@@ -9,12 +9,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
+  NavLink
 } from 'reactstrap';
 const Signup = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,27 +28,12 @@ const Signup = () => {
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu >
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-              </DropdownMenu>
-            </UncontrolledDropdown>
+          <Nav className="me-auto" navbar> 
+          <NavItem><NavLink href='#'>Options</NavLink></NavItem> 
+           <NavItem><NavLink href='#'>Options</NavLink></NavItem>   
+           <NavItem><NavLink href='#'>Options</NavLink></NavItem>  
+                
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
@@ -61,6 +41,9 @@ const Signup = () => {
       <div className='card-title text-center my-3 mx-auto'><h3>Sign Up Form</h3></div>
       <form onSubmit={(e)=>{
         e.preventDefault();
+        function validation(){
+          
+        }
           async function addPro()
         {
           let res=await axios.post('http://tanveerpp.pythonanywhere.com/emps/',data);
@@ -92,7 +75,7 @@ const Signup = () => {
         <div className='form-group col-lg-9 col-md-7 my-3 mx-auto'>
           <button className=' btn btn-danger my-2 form-control shadow'>Sign Up</button>
         </div>
-      </form>
+      </form> 
 
     </div>
 
