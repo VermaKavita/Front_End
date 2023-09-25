@@ -36,7 +36,7 @@ const SignIn = () => {
     <input type="text" className='form-control' name="password" value={data.password} onChange={change}/>
 </div>
 <div className='form-group mt-3'>
-    <a href='#'><button className='btn btn-danger form-control' >Sign in</button></a>
+    <Link to={"/"}><button className='btn btn-danger form-control' >Sign in</button></a>
 
 </div>
 </form>
