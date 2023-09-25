@@ -24,15 +24,15 @@ const Dashboard = () => {
   <nav id="sidebarMenu" className="navbar shadow sticky-top d-sm-block bg-dark my-4" >
     <div >
       <div className="list-group list-group-flush bg-dark">
-      <button className='btn'> <a href="#" className="list-group-item bg-danger " aria-current="true" >    Main dashboard  </a></button> 
+      <button className='btn'> <Link to={"/"}  className="list-group-item bg-danger " aria-current="true" >    Main dashboard  </Link></button> 
       
       <button className='btn '><Link to={"/"} className="list-group-item my-1">Home </Link></button>
       <button className='btn '><Link to={"/"} className="list-group-item  my-1"> Log In</Link></button>
-      <button className='btn '><a href="#" className="list-group-item my-1">  Teacher</a></button>
-      <button className='btn '><a href="#" className="list-group-item my-1 "> Student </a></button>
-      <button className='btn '><a href="#" className="list-group-item my-1"> Courses</a></button>
-        <button className='btn'> <a href="#" className="list-group-item my-1"> About</a></button>
-        <button className='btn'> <a href="#" className="list-group-item my-1"> Contact</a></button>
+      <button className='btn '><Link to={"/"} className="list-group-item  my-1"> Teacher</Link></button>
+      <button className='btn '><Link to={"/"} className="list-group-item  my-1">Student </Link></button>
+      <button className='btn '><Link to={"/"} className="list-group-item  my-1"> Courses</Link></button>
+        <button className='btn'> <Link to={"/"} className="list-group-item  my-1"> About</Link></button>
+        <button className='btn'><Link to={"/"} className="list-group-item  my-1"> Contact</Link></button>
       
       </div>
     </div>
